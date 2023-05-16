@@ -66,7 +66,7 @@ const history = (filter = {},limit = 20) => ({
   method: METHODS.GET,
   qs: {
     filter,
-    limit,
+    // limit,
   },
 });
 
