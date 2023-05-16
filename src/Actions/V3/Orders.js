@@ -61,12 +61,11 @@ const fetchByExternalId = externalId => fetchBy(externalId, 'externalId');
 const updateById = (order = {}) => updateBy(order, 'id');
 const updateByExternalId = (order = {}) => updateBy(order, 'externalId');
 
-const history = (filter = {}, page = 1, limit = 20) => ({
+const history = (filter = {},limit = 20) => ({
   uri: 'orders/history',
   method: METHODS.GET,
   qs: {
     filter,
-    page,
     limit,
   },
 });
